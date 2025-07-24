@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murshida K. | Full-Stack Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "#fdfbff",
+              "text-primary": "#27272a",
+              "text-secondary": "#52525b",
+              primary: "#7e22ce",
+              "primary-focus": "#6b21a8",
+              secondary: "#c026d3",
+              "accent-pink": "#db2777",
+              "accent-yellow": "#eab308",
+              "light-gray": "#f4f4f5",
+              "border-color": "#e4e4e7",
+
+              // Dark mode colors
+              "dark-background": "#1a1a1a",
+              "dark-surface": "#2a2a2a",
+              "dark-text-primary": "#fafafa",
+              "dark-text-secondary": "#a1a1aa",
+              "dark-border-color": "#3f3f46",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+              "fade-in-up": {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "fade-in-up": "fade-in-up 0.8s ease-out forwards",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "react/": "https://esm.sh/react@^19.1.0/",
+          "react": "https://esm.sh/react@^19.1.0",
+          "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+          "@google/genai": "https://esm.sh/@google/genai@^1.11.0"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body
+    class="bg-background text-text-secondary font-sans antialiased dark:bg-dark-background dark:text-dark-text-secondary"
+    style="
+      background-image: radial-gradient(#d4d4d8 1px, transparent 1px);
+      background-size: 20px 20px;
+    "
+  >
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

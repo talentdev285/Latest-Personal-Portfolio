@@ -1,0 +1,6 @@
+{
+  "name": "AI-Powered Personal Portfolio",
+  "description": "A personal portfolio website for a senior frontend engineer, showcasing skills, projects, and an interactive project idea generator powered by the Gemini API. It features a modern, clean design with a custom color palette.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
